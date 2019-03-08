@@ -58,7 +58,7 @@ let jsUtils = {
 	
 	/*
 	 * Name: getParentByTagName.
-	 * Description: Retrieve all parents associated with the specified classname.
+	 * Description: Retrieve all parents associated with the specified tagname.
 	 * Compatibility: Chrome 8, IE 10, Firefox 3.6, Safari 5.1, Operah 11.5
 	 * 
 	 * @para element [element] - JS version of HTML element.
@@ -82,7 +82,7 @@ let jsUtils = {
 	
 	/*
 	 * Name: getParentsByTagName.
-	 * Description: Retrieve all parents associated with the specified classname.
+	 * Description: Retrieve all parents associated with the specified tagname.
 	 * Compatibility: Chrome 8, IE 10, Firefox 3.6, Safari 5.1, Operah 11.5
 	 * 
 	 * @para element [element] - JS version of HTML element.
@@ -106,4 +106,6 @@ let jsUtils = {
 		//Return parents; otherwise false.
 		return (parents.length > 0) ? parents : false;
 	}
+	
+	
 }
