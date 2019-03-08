@@ -89,7 +89,7 @@ let jsUtils = {
 	 * @para tagname [string] - The tagname to be checked.
 	 * @return [Array[element]] - Returns an array of nodes that all match the classname.
 	 */
-	getParentsByClassName: function(element, tagName) {
+	getParentsByTagName: function(element, tagName) {
 		
 		//Array of parent elements containing classname.
 		let parents = [];
