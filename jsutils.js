@@ -105,6 +105,20 @@ let jsUtils = {
 		
 		//Return parents; otherwise false.
 		return (parents.length > 0) ? parents : false;
+	},
+	
+	/*
+	 * Name: printHTML.
+	 * Description: Takes a string and escapes all HTML related characters so the full string legible and not confused for HTML syntax.
+	 * Compatibility: ???
+	 * 
+	 * @para string [string] - A string to be parsed.
+	 * @return string [string] - Returns a string with all HTML related characters escaped.
+	 */
+	printHTML: function(string) {
+		
+		/* Return legible HTML. */
+		return String(string).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 	}
 	
 	
