@@ -2,7 +2,7 @@
 A group of useful javascript functions to make a developers job easier.
 
 ## Status
-This project is an open source public repository that is actively developed by Matthew R. Dangle. Everyone is free to download and install JSutils for personal or commerical use. However, JSutils is not currently accepting pull or issue requests to modify the code.
+This project is an open source public repository that is actively developed by Matthew R. Dangle. Everyone is free to download and install JSutils for personal or commerical use.
 
 ## Releases
 JSutils is released as an as is utility library, there is no plan for any official release.
