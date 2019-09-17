@@ -3,7 +3,62 @@
  * Description: Convenience functions to make scripting easier.
  */
 let jsUtils = {
+
+	/**
+	 * Name: Clone.
+	 * Description: Clones any variable and creates a new variable without reference.
+	 * Compatibility: ???
+	 * 
+	 * @para original [anything] - [Required] - The thing which to copy.
+	 * @returns A copy of the original without reference.
+	 */
+	clone: function(original) {
+
+		// If the clone is an object, clone this way...
+		if (typeof original === 'object') {
+			
+			// Set base clone object.
+			var clone_obj = {};
+
+			// Loop through object and clone all object properties.
+			for (var i in original) {
+				
+				// Retrieve property and value.
+				var property = i;
+				var value = original[i];
+				
+				// Ensure property is unique to original.
+				if (original.hasOwnProperty(property))
+					clone_obj[property] = clone(original[property]);
+			}
+
+			// Copy prototype function
+			clone_obj.__proto__ = original.__proto__;
+
+			// Returned cloned object.
+			return clone_obj;
+		}
 		
+		// If the clone is an array, clone this way...
+		else if (typeof original === '[object Array]') {
+			
+			// Set base clone object.
+			var clone_array = {};
+			
+			// Loop through object and clone all array properties.
+			for (var i = 0; i < original.length; i++) {
+				clone_obj[i] = clone(original[i]);
+			}
+			
+			// Returned cloned array.
+			return clone_array;
+		}
+		
+		// Anything else, return the original.
+		else
+			return original;
+	},
+
 	/*
 	 * Name: getParentByClassName.
 	 * Description: Retrieves the first parent found with the specified classname.
