@@ -1,4 +1,4 @@
-# Javascript Utilities
+# Javascript Utilities [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 A group of useful javascript functions to make a developers job easier.
 
 ## Status
