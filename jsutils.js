@@ -263,15 +263,6 @@ let jsUtils = {}
 	}
 	
 	/**
-	 * Name: Library ID.
-	 * Type: Key.
-	 * Access: Public.
-	 * For: Pager.
-	 * Description: The Javascript Library ID for validation and checking.
-	*/ 
-	pager.prototype.libID = 'formation-pager'; // This should never change.
-	
-	/**
 	 * Name: Next.
 	 * Type: Function.
 	 * Access: Public.
