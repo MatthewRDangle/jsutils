@@ -272,9 +272,6 @@ let jsUtils = {}
 	 * @param elements [Object array[object node]] [Required] - A list of elements to loop through to set the active element.
 	 * @param toggleClass [String] [Required] - The toggle class to add and remove from elements for viewing.
 	 * @return [Integer] - The index of the currently active element within the array.
-	 * 
-	 * @deprecated - This method will no longer be updated moving forward, but will be kept for backwards compatibility.
-	 * Check the pager object for future updates.
 	 */
 	pager.prototype.next = function() {
 
@@ -304,9 +301,6 @@ let jsUtils = {}
 	 * @param elements [Object array[object node]] [Required] - A list of elements to loop through to set the active element.
 	 * @param toggleClass [String] [Required] - The active class to add and remove from elements for viewing.
 	 * @return [Integer] - The index of the currently active element within the array.
-	 * 
-	 * @deprecated - This method will no longer be updated moving forward, but will be kept for backwards compatibility.
-	 * Check the pager object for future updates.
 	 */
 	pager.prototype.prev = function() {
 
